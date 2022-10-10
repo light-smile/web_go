@@ -1,42 +1,54 @@
+# 
+
 ### Description
 
 用于快速web开发框架，集成配置管理、日志、gorm、mqtt、websocket等模块，包含了跨域处理、请求响应封装、请求参数校验，也可以根据自己需求自定义一些功能。
 
-### 安装依赖
+### 安装项目依赖
 
-```bash
-go mod tidy  
+```
+go mod tidy
 ```
 
 ### 安装swagger
 
-````bash
-go get -u github.com/swaggo/swag/cmd/swag go get -u github.com/swaggo/gin-swagger go get -u github.com/swaggo/files go get -u github.com/alecthomas/template```  
+```
+go get -u github.com/swaggo/swag/cmd/swag
+go get -u github.com/swaggo/gin-swagger
+go get -u github.com/swaggo/files
+go get -u github.com/alecthomas/template
+```
 
-初始化swagger文档  
+### 初始化swagger
 
-```bash  
-swag init```  
+```bash
+swag init
+```
 
-代码热更新  
+### 代码热更新安装fresh
 
-```bash  
-go get github.com/pilu/fresh```  
+```bash
+go get github.com/pilu/fresh
+```
 
-安装后执行  
+### 安装后终端输入
 
-```bash  
-fresh  
-````
+```bash
+fresh
+```
 
 ### 未安装fresh也可以直接启动
 
-```bash
+```
 go run main.go
 ```
-###测试是否启动成功
+
+### 测试是否启动成功
 
 访问localhost:3000/test/hello,收到json数据则启动成功。
+
+### 编程小白一枚，可能存在诸多问题；如遇不懂欢迎交流
+
 ### 功能模块介绍
 
 ├─common         公共类型、函数封装
