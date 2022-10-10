@@ -1,0 +1,26 @@
+# git提交忽略文档，使用svn可忽略该文档
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.xlsx
+app_linux_armv7
+
+# 数据库数据 不上传
+*.db
+
+/log
+/logger/log/*
+/tmp
+/docs
+
+
+# Test binary, built with `go test -c`
+*.test
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+.idea/
+.vscode/

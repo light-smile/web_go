@@ -1,0 +1,24 @@
+Server:
+  Name: "dnds_" # 应用名称
+  Mode: "development" # 模式：development, test, production
+  Port: ":3000"
+Database:
+  FileName: "sql.db"
+Mqtt:
+  Qos: 1  # mqtt 服务质量
+  Ip: "193.168.2.33:"
+  Port: "1883"
+  ClientId: "0003"
+  UserName: ""
+  Password: ""
+Logger:
+  ShowReqAndRes: true # 日志是否记录请求数据和响应数据
+  LogLevel: "info" #  **生产版本需改为error  日志打印级别 debug  info  warning  error
+  LogFormat: "logfmt" # 输出日志格式	logfmt json
+  LogPath: "./log" # 输出日志文件路径
+  LogFileName: "test.log" # 输出日志文件名称
+  LogFileMaxSize: 1 # 【日志分割】单个日志文件最多存储量 单位(mb)
+  LogFileMaxBackups: 10 # 【日志分割】日志备份文件最多数量
+  LogMaxAge: 1000 # 日志保留时间，单位: 天 (day)
+  LogCompress: false # 是否压缩日志
+  LogStdout: true # 是否输出到终端
